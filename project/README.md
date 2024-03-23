@@ -69,7 +69,8 @@ Clone the appropriate git repo with the starter code. There will be 2 folders. Z
     - `export TF_PLUGIN_CACHE_DIR="/tmp"`
 
 - kubectl
-    - `curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/kubectl`
+    <!-- - `curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/kubectl` -->
+    - `curl -o kubectl curl -LO https://dl.k8s.io/release/v1.29.2/bin/linux/amd64/kubectl`
     - `chmod +x ./kubectl`
     - `mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin`
     - `echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc`
@@ -242,3 +243,6 @@ public_subnet_ids = [
   "subnet-019caba313b2400f0",
 ]
 vpc_id = "vpc-0904631afa801121d"
+
+
+RCHGG32I0ALEIO0HFHFSNEK6DI3JOQIAPC92LQ3BY3PKB90K5S
