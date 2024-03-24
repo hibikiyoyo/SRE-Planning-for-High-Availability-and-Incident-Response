@@ -86,6 +86,7 @@ Clone the appropriate git repo with the starter code. There will be 2 folders. Z
 8. Setup Kubernetes config so you can ping the EKS cluster
    - `aws eks --region us-east-2 update-kubeconfig --name udacity-cluster`
    <!-- arn:aws:eks:us-east-2:133293963459:cluster/udacity-cluster -->
+   <!-- arn:aws:eks:us-west-1:133293963459:cluster/udacity-cluster -->
    - Change kubernetes context to the new AWS cluster
      - `kubectl config use-context arn:aws:eks:us-east-2:133293963459:cluster/udacity-cluster`
        - e.g ` arn:aws:eks:us-east-2:139802095464:cluster/udacity-cluster`
@@ -226,37 +227,3 @@ If you want to take your project even further going above and beyond, here are 3
 
 ## License
 [License](../LICENSE.md)
-
-
-
-Outputs:
-
-account_id = "133293963459"
-caller_arn = "arn:aws:sts::133293963459:assumed-role/voclabs/user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
-caller_user = "AROAR6CHQPDBUJ32EEXGQ:user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
-private_subnet_ids = [
-  "subnet-0d01e5d2f1a38cf84",
-  "subnet-002e2ca282b04b790",
-]
-public_subnet_ids = [
-  "subnet-03517305dbd0b86ed",
-  "subnet-019caba313b2400f0",
-]
-vpc_id = "vpc-0904631afa801121d"
-
-
-RCHGG32I0ALEIO0HFHFSNEK6DI3JOQIAPC92LQ3BY3PKB90K5S
-
-
-account_id = "133293963459"
-caller_arn = "arn:aws:sts::133293963459:assumed-role/voclabs/user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
-caller_user = "AROAR6CHQPDBUJ32EEXGQ:user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
-private_subnet_ids = [
-  "subnet-0d01e5d2f1a38cf84",
-  "subnet-002e2ca282b04b790",
-]
-public_subnet_ids = [
-  "subnet-03517305dbd0b86ed",
-  "subnet-019caba313b2400f0",
-]
-vpc_id = "vpc-0904631afa801121d"
