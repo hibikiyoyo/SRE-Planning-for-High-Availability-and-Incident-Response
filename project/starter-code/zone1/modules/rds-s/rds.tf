@@ -2,7 +2,7 @@ variable primary_db_cluster_arn {}
 
 resource "aws_rds_cluster_parameter_group" "cluster_pg-s" {
   name   = "udacity-pg-s"
-  family = "aurora5.6"
+  family = "aurora-mysql5.7"
 
   parameter {
     name  = "binlog_format"    
@@ -34,6 +34,9 @@ resource "aws_rds_cluster" "udacity_cluster-s" {
   skip_final_snapshot      = true
   storage_encrypted        = false
   depends_on = [aws_rds_cluster_parameter_group.cluster_pg-s]
+  backup_retention_period  = 5
+  replication_source_identifier   = var.primary_db_cluster_arn
+  source_region            = "us-east-2"
 }
 
 resource "aws_rds_cluster_instance" "udacity_instance-s" {
