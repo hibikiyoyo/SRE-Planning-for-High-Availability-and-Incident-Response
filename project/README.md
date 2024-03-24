@@ -246,3 +246,17 @@ vpc_id = "vpc-0904631afa801121d"
 
 
 RCHGG32I0ALEIO0HFHFSNEK6DI3JOQIAPC92LQ3BY3PKB90K5S
+
+
+account_id = "133293963459"
+caller_arn = "arn:aws:sts::133293963459:assumed-role/voclabs/user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
+caller_user = "AROAR6CHQPDBUJ32EEXGQ:user2598975=fe3164ea-f40b-11ed-9711-ab24c3b75c69"
+private_subnet_ids = [
+  "subnet-0d01e5d2f1a38cf84",
+  "subnet-002e2ca282b04b790",
+]
+public_subnet_ids = [
+  "subnet-03517305dbd0b86ed",
+  "subnet-019caba313b2400f0",
+]
+vpc_id = "vpc-0904631afa801121d"
